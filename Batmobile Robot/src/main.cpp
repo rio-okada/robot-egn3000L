@@ -44,6 +44,6 @@ void loop() {
   }
   else {
     // if neither is detecting anything it's kind of stuck, so undo the last move and move again but with half the move_time
-    motors.move(Motors::Commands::undo, move_time);
+    motors.move(Motors::Commands::redo, move_time);
   }
 }

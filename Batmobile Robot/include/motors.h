@@ -5,7 +5,7 @@
 
 class Motors {
     public:
-        enum class Commands {forward, left, right, undo};           // list of available commands
+        enum class Commands {forward, left, right, redo};           // list of available commands
         struct PinList { int in1; int in2; int in3; int in4; };     // list of pins for driving motors
 
         Motors() = delete;
