@@ -12,4 +12,4 @@ class IR {
         int pin;    // arduino pin number that IR sensor is connected to
 };
 
-#endif IR_H
+#endif
