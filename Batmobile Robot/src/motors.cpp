@@ -1,22 +1,21 @@
 #include <Arduino.h>
 #include "motors.h"
 
-void moveForward(int seconds)
+Motors::Motors(PinList pins)
+    : pins(pins)        // initialize pins
 {
-
 }
 
-void moveBack(int seconds)
+void Motors::begin()
 {
-
+    // set pins as outputs
+    pinMode(pins.in1, OUTPUT);
+    pinMode(pins.in2, OUTPUT);
+    pinMode(pins.in3, OUTPUT);
+    pinMode(pins.in4, OUTPUT);
 }
 
-void turnLeft(int seconds)
+void Motors::move(Commands cmd, int sec)
 {
-
-}
-
-void turnRight(int seconds)
-{
-
+    // move motors according to cmd
 }
