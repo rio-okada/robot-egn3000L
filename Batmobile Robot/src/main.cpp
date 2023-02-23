@@ -22,6 +22,7 @@ void setup() {
 void loop() {
   /* if the object in front is closer than 5cm, do nothing. */
   if (proximity_sensor.getDistance() < 5) {
+    // Maybe implement some code to try to go around the obstacle?
     return;
   }
 
